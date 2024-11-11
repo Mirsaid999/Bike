@@ -1,0 +1,192 @@
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    gap: 32px;
+}
+
+.nav__list-link{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    transition: .5s;
+    position: relative;
+}
+
+.nav__list-link::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F57520;
+    transform: scale(0);
+    transform-origin: left;
+    transition: .5s;
+}
+
+.nav__list-link::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F57520;
+    transform: scale(0);
+    transform-origin: right;
+    transition: .5s;
+}
+
+.nav__list-link:hover::after{
+    transform: scale(1);
+}
+
+.nav__list-link:hover::before{
+    transform: scale(1);
+}
+
+.nav__list-link:hover{
+    color: #F57520;
+}
+
+.nav__icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.van__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.van__menu-btn{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.van__menu-btn-line{
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: .5s;
+}
+
+.van__menu-btn-line::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: .5s;
+}
+
+.van__menu-btn-line::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: .5s;
+}
+
+.van__menu-btn:hover .van__menu-btn-line{
+    background: transparent;
+}
+
+.van__menu-btn:hover .van__menu-btn-line::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.van__menu-btn:hover .van__menu-btn-line::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.van__menu-btn-list{
+    background-color: white;
+    width: 440px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.van__menu-btn:hover .van__menu-btn-list{
+    transform: scaleX(1);
+}
+
+.van__menu-btn-list{
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.van__menu-title{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 49.2px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: black;
+    margin-bottom: 48px;
+}
+
+.van__list-link{
+    color: black;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    position: relative;
+    transition: .4s;
+    padding-bottom: 5px;
+}
+
+.van__list-link:hover{
+    color: #F57520;
+}
+
+.van__list-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scale(0);
+    background-color: #F57520;
+    transition: .5s;
+    height: 2px;
+    width: 100%;
+}
+
+.van__list-link:hover::before{
+    transform: scale(1);
+}

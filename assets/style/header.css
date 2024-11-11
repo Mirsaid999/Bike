@@ -1,0 +1,96 @@
+.header__bg{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 875px;
+}
+
+.header__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.header__title{
+    font-family: 'Oswald';
+    font-size: 110px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    max-width: 679px;
+}
+
+.header__descr{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: white;
+    max-width: 645px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+.header__btn{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    text-align: right;
+    color: white;
+    background: rgba(245, 117, 32, 1);
+    border-radius: 10px;
+    transition: .5s;
+    max-width: 180px;
+    padding: 16px 45px;
+}
+
+.header__btn:hover{
+    background-color: white;
+    color: rgba(245, 117, 32, 1);
+}
+
+.header__box{
+    position: relative;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__box-item{
+    display: flex;
+    flex-direction: column;
+    width: 525px;
+    background: rgba(16, 16, 16, 1);
+    padding: 48px 67px;
+    transition: .5s;
+    transform: scale(1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.header__box-item:hover{
+    transform: scale(1.1);
+}
+
+.header__box-title{
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+    max-width: 293px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 65px 0;
+}
+
+

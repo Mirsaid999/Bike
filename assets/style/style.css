@@ -1,0 +1,38 @@
+@import './fonts.css';
+@import 'nav.css';
+@import './header.css';
+@import './root.css';
+@import './main.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 43px 0;
+    max-width: 1250px;
+}
+
+.section__title{
+    font-family: 'Oswald';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 78.72px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: black;
+    padding: 80px 0;
+}
